@@ -11,8 +11,12 @@ export function getDevices(){
     }).then(data => data.json())
 }
 
+
+
 export function sendMessage(deviceId,payload){
     
+    
+
     return fetch(apiBaseUrl+'/api/device/send-message',{
         method:'POST',
         headers:{
