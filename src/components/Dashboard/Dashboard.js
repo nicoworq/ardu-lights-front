@@ -1,6 +1,7 @@
 import React , {useEffect, useState }from 'react';
 import './Dashboard.css'
 import { getDevices } from '../../services/devices';
+import Device from '../Device/Device';
 
 export default function Dashboard(){
 
@@ -25,9 +26,9 @@ export default function Dashboard(){
         <h2>Dashboard</h2>
         
         {devices.length > 0 && 
-        <ul>
-        {devices.map(device => <li key={device._id}>{device.name}</li>)}
-        </ul>
+            <div>
+                {devices.map(device => <Device key={device._id} device={device} updateDevices={setDevices}/>)}
+            </div>
         }
         {!devices.length && 
         <p>No encontramos dispositivos</p>}
