@@ -15,7 +15,7 @@ function App() {
   }
   return (
     <div className='wrapper'>
-      <h1>Application</h1>
+      <h1>Ardu-Lights</h1>
       <BrowserRouter>
       <Routes>
         <Route path='/dashboard' element={<Dashboard/>}/>

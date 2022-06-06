@@ -2,6 +2,7 @@ import React , {useEffect, useState }from 'react';
 import './Dashboard.css'
 import { getDevices } from '../../services/devices';
 import Device from '../Device/Device';
+import MqttServer from '../MqttServer/MqttServer';
 
 export default function Dashboard(){
 
@@ -32,7 +33,11 @@ export default function Dashboard(){
         }
         {!devices.length && 
         <p>No encontramos dispositivos</p>}
+        <MqttServer/>
         </div>
+
+        
+
          
     )
 }

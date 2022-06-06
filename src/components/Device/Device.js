@@ -1,6 +1,7 @@
 
 import { sendMessage } from '../../services/devices';
 import React, {useState} from 'react';
+import './Device.css';
 
 function getStatus(lastPayload){
     switch(lastPayload){

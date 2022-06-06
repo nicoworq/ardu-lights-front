@@ -1,0 +1,7 @@
+.device {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    margin-right: 20px;
+}
